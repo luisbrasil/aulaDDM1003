@@ -13,4 +13,9 @@ class Aluno {
       required this.nome,
       required this.CPF,
       required this.funcao});
+
+  @override
+  String toString() {
+    return 'nome: ${nome}, RA: ${RA}, CPF: ${CPF}';
+  }
 }

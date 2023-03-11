@@ -5,5 +5,5 @@ class Professor {
   String? CPF;
 
   Professor();
-  Professor.doisParametros({this.nome,this.SIAPE})
+  Professor.doisParametros({this.nome, this.SIAPE});
 }

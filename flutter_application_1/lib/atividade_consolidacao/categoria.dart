@@ -1,4 +1,12 @@
 class Categoria {
-  String? nome;
-  String? descricao;
+  String nome;
+  String descricao;
+  String status;
+  int id;
+
+  Categoria(
+      {required this.nome,
+      required this.descricao,
+      required this.status,
+      required this.id});
 }

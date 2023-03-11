@@ -27,11 +27,4 @@ void main(List<String> arguments) {
   print('${aluno2.nome} ${aluno2.RA} ${aluno2.CPF}');
   print('${aluno3.nome} ${aluno3.RA} ${aluno3.CPF}');
   print('${Aluno.opcionais(RA: 333, nome: 'Maria', CPF: '333.333.333-33')}');
-
-  /*
-    Atividade 01
-    - criar professor com 2 atributos;
-    - alterar atributos do professor para não nulos;
-    - alterar atributos do professor 
-  */
 }
