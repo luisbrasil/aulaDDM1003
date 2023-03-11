@@ -9,4 +9,8 @@ class Estado {
       required this.sigla,
       required this.status,
       required this.id});
+
+  String toString() {
+    return 'Nome: ${nome}, Sigla: ${sigla}, Status: ${status}, Id: ${id}';
+  }
 }

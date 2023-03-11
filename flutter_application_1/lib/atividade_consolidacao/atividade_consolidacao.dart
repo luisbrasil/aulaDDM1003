@@ -19,7 +19,7 @@ void main(List<String> arguments) {
   var sorveteria = Fornecedor(
       nome: "Sorveteria Vida Moinho",
       cidade: paranavai,
-      CPNJ: "09.977.084/0001-92",
+      CNPJ: "09.977.084/0001-92",
       status: "A",
       id: 1);
   var sorvete = Categoria(
@@ -64,7 +64,7 @@ void main(List<String> arguments) {
                   Estado(nome: "São Paulo", sigla: "SP", status: "A", id: 2),
               status: "A",
               id: 2),
-          CPNJ: "55.167.066/0001-62",
+          CNPJ: "55.167.066/0001-62",
           status: "A",
           id: 2),
       itemPedido: ItemPedido(
@@ -108,7 +108,7 @@ void main(List<String> arguments) {
                   nome: "Rio Grande do Sul", sigla: "RS", status: "A", id: 3),
               status: "A",
               id: 3),
-          CPNJ: "88.741.985/0001-57",
+          CNPJ: "88.741.985/0001-57",
           status: "A",
           id: 3),
       itemPedido: ItemPedido(
@@ -153,7 +153,7 @@ void main(List<String> arguments) {
                   Estado(nome: "Pernambuco", sigla: "PE", status: "A", id: 4),
               status: "A",
               id: 4),
-          CPNJ: "51.511.443/0001-88",
+          CNPJ: "51.511.443/0001-88",
           status: "A",
           id: 4),
       itemPedido: ItemPedido(
@@ -175,4 +175,9 @@ void main(List<String> arguments) {
       id: 4,
       observacoes:
           "O cliente comeu 10 cebolas em menos de 3 minutos, que cara louco!");
+
+  print(pedido.toString() + "\n");
+  print(pedido2.toString() + "\n");
+  print(pedido3.toString() + "\n");
+  print(pedido4.toString() + "\n");
 }

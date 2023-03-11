@@ -13,4 +13,8 @@ class ItemPedido {
       required this.precoTotal,
       required this.status,
       required this.id});
+
+  String toString() {
+    return 'Quantidade: ${quantidade}, Produto: ${produto.toString()}, Preço Total: ${precoTotal}, Status: ${status}, Id: ${id}';
+  }
 }

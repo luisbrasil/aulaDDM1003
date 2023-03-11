@@ -15,4 +15,8 @@ class Produto {
       required this.categoria,
       required this.status,
       required this.id});
+
+  String toString() {
+    return 'Nome: ${nome}, Preço Custo: ${precoCusto}, Preço de Venda: ${precoVenda}, Preço de Custo: ${precoCusto}, Status: ${status}, Id: ${id}';
+  }
 }

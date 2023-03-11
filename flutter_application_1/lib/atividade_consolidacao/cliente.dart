@@ -13,4 +13,9 @@ class Cliente {
       required this.CPF,
       required this.status,
       required this.id});
+
+  @override
+  String toString() {
+    return 'Nome: ${nome}, Cidade: ${cidade.toString()}, CPF: ${CPF}, Status: ${status}, Id: ${id}';
+  }
 }

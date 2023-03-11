@@ -9,4 +9,8 @@ class Categoria {
       required this.descricao,
       required this.status,
       required this.id});
+
+  String toString() {
+    return 'Nome: ${nome}, Descrição: ${descricao}, Status: ${status}, Id: ${id}';
+  }
 }

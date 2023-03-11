@@ -11,4 +11,8 @@ class Cidade {
       required this.estado,
       required this.status,
       required this.id});
+
+  String toString() {
+    return 'Nome: ${nome}, Estado: ${estado.toString()}, Status: ${status}, Id: ${id}';
+  }
 }

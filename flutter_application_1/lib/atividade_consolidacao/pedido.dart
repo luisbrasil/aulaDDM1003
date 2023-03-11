@@ -19,4 +19,8 @@ class Pedido {
       required this.itemPedido,
       required this.id,
       required this.observacoes});
+
+  String toString() {
+    return 'Total: ${total}, Cliente: ${cliente.toString()}, Fornecedor: ${fornecedor.toString()}, Item Pedido: ${itemPedido}, Status: ${status}, Id: ${id}, Observações: ${observacoes}';
+  }
 }
