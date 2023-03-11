@@ -3,6 +3,12 @@ class Professor2 {
   DateTime? nascimento;
   String SIAPE;
   String CPF;
+  Function? funcao;
 
   Professor2({required this.nome, required this.SIAPE, required this.CPF});
+  Professor2(
+      {required this.nome,
+      required this.SIAPE,
+      required this.CPF,
+      this.funcao});
 }

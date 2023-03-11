@@ -2,18 +2,10 @@ import 'package:flutter_application_1/atividade_1_criar_professor/professor.dart
 import 'package:flutter_application_1/atividade_1_criar_professor/professor2.dart';
 import 'package:flutter_application_1/classes/aluno.dart';
 
-/*
-  - alterar professor para ter um parameter function
+void printaProfessor() {
+  print("Olá sou um professor!");
+}
 
-
-  - criar um objeto professor com função nomeada
-
-
-  - criar um objeto professor com arrow function
-
-
-  - criar um objeto professor com arrow function no print
-*/
 void main(List<String> arguments) {
   print('Exercicio 1');
 
@@ -37,4 +29,24 @@ void main(List<String> arguments) {
   print('${Aluno.opcionais(RA: 333, nome: 'Maria', CPF: '333.333.333-33')}');
 
   // alterar professor para ter atributos nulos e não nulos
+  //A classe Professor2 tem 3 atributos não nulos(nome, cpf, siape) e 1 nulo(nascimento)
+
+  // alterar professor para ter um parameter function
+  // criar um objeto professor com função nomeada
+  Professor2 professor4 = Professor2.comFuncao(
+      nome: "Guilherme",
+      SIAPE: "3321PR321",
+      CPF: "543.543.543-34",
+      funcao: printaProfessor);
+
+  // criar um objeto professor com arrow function
+  Professor2 professor5 = Professor2.comFuncao(
+      nome: "Guilherme",
+      SIAPE: "3321PR321",
+      CPF: "543.543.543-34",
+      funcao: () => print("Olá sou um professor!"));
+
+  //criar um objeto professor com arrow function no print
+  print(
+      '${Professor2.comFuncao(nome: "Guilherme", SIAPE: "3321PR321", CPF: "543.543.543-34", funcao: () => print("Olá sou um professor!"))}');
 }
